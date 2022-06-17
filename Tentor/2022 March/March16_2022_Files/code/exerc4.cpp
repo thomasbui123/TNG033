@@ -27,6 +27,7 @@ private:
 };
 
 int main() {
+    
     std::cout << "STEP 1 :\n";
 
     std::ifstream file("C:/Users/Voysys/Desktop/C++ Recap/Tentor/2022 March/March16_2022/March16_2022/code/numbers.txt");
@@ -63,67 +64,46 @@ int main() {
 
     /* *************************** */
     std::cout << "STEP 2\n";
-    if(V.size() % 2)
+    std::cout << "Amount of numbers in file: " << V.size() << "\n";
+    std::cout << "V[V.size() / 2 - 1] = " << V[V.size() / 2 - 1] << "\n";
+    std::cout << "V[V.size() / 2] = " << V[V.size() / 2] << "\n";
+
+    if (V.size() % 2 == 0) {
+        std::cout << "Median is: " << (V[V.size() / 2 - 1] + V[V.size() / 2]) / 2.0 << "\n";
+    }
+    else {
+        std::cout << "Median is: " << V[V.size() / 2 - 1] << "\n";
+    }
+
+    std::cout << "STEP 3\n";
+    std::set<int> even{};
+    std::set<int> odd{};
+
+    //std::copy_if(V.begin(), V.end(), std::inserter(even, even.end()), [](int V) {return (V % 2 == 0);});
+    //Lagra jämna värden i set even.
+    std::copy_if(V.begin(), V.end(), std::inserter(even, even.end()), [](int x) {return (x % 2 == 0); });
+    std::copy_if(V.begin(), V.end(), std::inserter(odd, odd.end()), [](int x) {return (x % 2 == 1); });
+   
+
+    std::cout << "STEP 4\n";
+    std::cout << "Even values: ";
+    std::copy(std::rbegin(even), std::rend(even), std::ostream_iterator<int>(std::cout, " "));
+    std::cout << "\n";
+    std::cout << "Odd values: ";
+    std::copy(std::rbegin(odd), std::rend(odd), std::ostream_iterator<int>(std::cout, " "));
+
+    std::cout << "STEP 5\n";
 
 
+  
+    /* *************************** */
+    std::cout << "STEP 5\n";
 
+    std::vector<int> V1;
 
-
-
-
-
-
-
-
-    //std::sort(std::begin(V), std::end(V));
-    ////std::copy(std::begin(V), std::end(V), std::ostream_iterator<int>(std::cout, " "));
-    //std::cout << "\n";
-
-    //// std::nth_element could also be used
-
-    //if (V.size() % 2) {
-    //    std::cout << "Median = " << V[V.size() / 2 - 1] << "\n\n";
-    //}
-    //else {
-    //    std::cout << "Median = " << (V[V.size() / 2 - 1] + V[V.size() / 2]) / 2.0 << "\n\n";
-    //}
-
-    ///* *************************** */
-    //std::cout << "STEP 3:\n";
-
-    //std::set<int> even{};
-    //std::set<int> odd{};
-
-    //std::copy_if(V.begin(), V.end(), std::inserter(even, even.end()),
-    //    [](int i) { return (i % 2 == 0); });
-
-    //std::copy_if(V.begin(), V.end(), std::inserter(odd, odd.end()),
-    //    [](int i) { return (i % 2 == 1); });
-
-    //std::cout << "\n\n";
-
-    ///* *************************** */
-    //std::cout << "STEP 4:\n";
-
-    //std::cout << "Odd values: ";
-    //std::copy(std::rbegin(odd), std::rend(odd), std::ostream_iterator<int>(std::cout, " "));
-
-    //std::cout << "\n";
-
-    //std::cout << "Even values: ";
-    //std::copy(std::begin(even), std::end(even), std::ostream_iterator<int>(std::cout, " "));
-
-    //std::cout << "\n\n";
-
-    ///* *************************** */
-    //std::cout << "STEP 5\n";
-
-    //std::vector<int> V1;
-
-    //if (odd.size() > 0) {
-    //    std::copy_if(std::begin(even), std::end(even), std::back_inserter(V1),
-    //        Select_smaller_than(*std::begin(odd)));
-    //    std::copy(std::begin(V1), std::end(V1), std::ostream_iterator<int>(std::cout, " "));
-    //}
-    //std::cout << "\n\n";
+    if (odd.size() > 0) {
+        std::copy_if(std::begin(even), std::end(even), std::back_inserter(V1), Select_smaller_than(*std::begin(odd)));
+        std::copy(std::begin(V1), std::end(V1), std::ostream_iterator<int>(std::cout, " "));
+    }
+    std::cout << "\n\n";
 }
