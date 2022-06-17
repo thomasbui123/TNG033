@@ -1,0 +1,6 @@
+C:/Users/Voysys/Desktop/C++ Recap/Tentor/2022 March/March16_2022_Files/code/out/build/x64-Debug/CMakeFiles/exercise1.dir
+C:/Users/Voysys/Desktop/C++ Recap/Tentor/2022 March/March16_2022_Files/code/out/build/x64-Debug/CMakeFiles/exercise2.dir
+C:/Users/Voysys/Desktop/C++ Recap/Tentor/2022 March/March16_2022_Files/code/out/build/x64-Debug/CMakeFiles/exercise4.dir
+C:/Users/Voysys/Desktop/C++ Recap/Tentor/2022 March/March16_2022_Files/code/out/build/x64-Debug/CMakeFiles/exercise6.dir
+C:/Users/Voysys/Desktop/C++ Recap/Tentor/2022 March/March16_2022_Files/code/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/Voysys/Desktop/C++ Recap/Tentor/2022 March/March16_2022_Files/code/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

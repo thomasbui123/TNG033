@@ -1,0 +1,98 @@
+
+***PHASE 1: Test Email class
+
+Email
+Keywords:
+Sender: aidvi
+Receiver: devil007
+Subject: TNG033 exam
+Mesg: The exam of TNG033 runs 8-13, march 16.
+
+
+Email
+Keywords:
+Sender: devil007
+Receiver: all
+Subject: TNG033 tentavisning
+Mesg: TNG033 tentavisning will be announced soon by an e-mail sent to all students.
+
+
+
+***PHASE 2: Test Essay class
+
+Report
+Keywords:
+Title: Lab1
+Author: Aida Nordman
+=============================
+To read and write binary files ...
+
+
+Report
+Keywords:
+Title: Endian problem
+Author: Aida Nordman
+=============================
+Endians are a confusing topic for many people. ...
+
+
+
+***PHASE 3: add keywords
+
+Email
+Keywords: tng033
+Sender: devil007
+Receiver: all
+Subject: TNG033 tentavisning
+Mesg: TNG033 tentavisning will be announced soon by an e-mail sent to all students.
+
+
+Report
+Keywords: c++ tng033
+Title: Lab1
+Author: Aida Nordman
+=============================
+To read and write binary files ...
+
+
+Report
+Keywords: endian exam
+Title: Endian problem
+Author: Aida Nordman
+=============================
+Endians are a confusing topic for many people. ...
+
+
+
+***PHASE 4: list documents by key
+
+**Documents associated to keyword = exam
+
+Report
+Keywords: endian exam
+Title: Endian problem
+Author: Aida Nordman
+=============================
+Endians are a confusing topic for many people. ...
+
+**Documents associated to keyword = tng033
+
+Email
+Keywords: tng033
+Sender: devil007
+Receiver: all
+Subject: TNG033 tentavisning
+Mesg: TNG033 tentavisning will be announced soon by an e-mail sent to all students.
+
+Report
+Keywords: c++ tng033
+Title: Lab1
+Author: Aida Nordman
+=============================
+To read and write binary files ...
+
+Delete all documents ...
+
+**Documents associated to keyword = exam
+No documents associated with keyword exam!!
+

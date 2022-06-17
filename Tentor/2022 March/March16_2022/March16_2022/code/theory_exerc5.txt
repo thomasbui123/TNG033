@@ -1,0 +1,15 @@
+/ =======================================================
+// Part III, Exerc 5: theory
+// Name:
+// Personal number:
+// =======================================================
+//Write your name and personal number. Otherwise, your exam is not graded.
+//Answers should be given in your own words!!
+
+Answer: 
+================================================
+
+A polymorphic class, sunch as Document in exercise 6, requires a public virtual destructor.
+Otherwise, deleting instances of the derived classes via pointers of the base-class leads to undefined behaviour.
+See: lecture 10, slides 16 & 17
+See also: https://stackoverflow.com/questions/461203/when-to-use-virtual-destructors

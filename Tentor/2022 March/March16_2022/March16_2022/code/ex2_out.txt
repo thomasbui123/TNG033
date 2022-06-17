@@ -1,0 +1,13 @@
+log_2(1) = 0.00
+
+Pre and pos-increment:
+++l1 = log_2(2) = 1.00
+l1++ = log_2(2)
+l1 = log_2(4)
+
+operator+= and operator+:
+l2 = log_2(20) = 4.32
+l2 + l1 = log_2(80)
+
+Other expressions:
+l2 = log_2(1920) = 10.91
