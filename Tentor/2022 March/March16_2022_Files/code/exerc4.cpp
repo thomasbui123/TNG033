@@ -13,18 +13,18 @@
 #include <fstream>
 #include <set>
 
-class Select_smaller_than {  // used in STEP 5
-public:
-    Select_smaller_than(int i) : val{ i } {
-    }
-
-    bool operator()(int k) {
-        return k < val;
-    }
-
-private:
-    int val;
-};
+//class Select_smaller_than {  // used in STEP 5
+//public:
+//    Select_smaller_than(int i) : val{ i } {
+//    }
+//
+//    bool operator()(int k) {
+//        return k < val;
+//    }
+//
+//private:
+//    int val;
+//};
 
 int main() {
     
@@ -91,18 +91,19 @@ int main() {
     std::cout << "\n";
     std::cout << "Odd values: ";
     std::copy(std::rbegin(odd), std::rend(odd), std::ostream_iterator<int>(std::cout, " "));
+    std::cout << "\n\n";
+    
 
-    std::cout << "STEP 5\n";
-
-
-  
     /* *************************** */
     std::cout << "STEP 5\n";
 
     std::vector<int> V1;
 
     if (odd.size() > 0) {
-        std::copy_if(std::begin(even), std::end(even), std::back_inserter(V1), Select_smaller_than(*std::begin(odd)));
+        /*std::copy_if(std::begin(even), std::end(even), std::back_inserter(V1), Select_smaller_than(*std::begin(odd)));*/
+
+        //Man kan göra en ny klass som hon har gjort. Men på du använder en capture som variabeln odd som ligger utanför vår copy_if.
+        std::copy_if(std::begin(even), std::end(even), std::back_inserter(V1), [odd](int k) {return (k < *std::begin(odd)); });
         std::copy(std::begin(V1), std::end(V1), std::ostream_iterator<int>(std::cout, " "));
     }
     std::cout << "\n\n";
