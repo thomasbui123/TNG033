@@ -1,0 +1,31 @@
+﻿// =======================================================
+// Part II, Exerc 3: theory
+// Name:
+// Personal number:
+// =======================================================
+//Write your name and personal number. Otherwise, your exam is not graded.
+//Answers should be given in your own words!!
+
+Answer :
+================================================
+
+void C::fun(const C &x) const;
+
+"const C &x" gives a guarantee that the function will not modify the actual parameter.
+
+const C a;
+C b;
+
+b.f(a);  <-- compiles
+if the function would have been declared as "void C::fun(C &x) const;" then the function call above would not compile.
+========
+
+"void C::fun(...) const;" gives a guarantee that the object pointed by pointer "this" will not be modified by the function
+Therefore, member function f can be invoked out of const instances of class C.
+
+const C d;
+d.f(b); //compiles, pointer this points to object d
+d.f(a); //compiles, pointer this points to object d
+
+If the function would have been declared "C::fun(const C &x)" then both functions calls above would not compile,
+though b.f(a) would compile.

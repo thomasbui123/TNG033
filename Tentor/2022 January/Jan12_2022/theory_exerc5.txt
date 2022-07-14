@@ -1,0 +1,36 @@
+/ =======================================================
+// Part III, Exerc 5: theory
+// Name:
+// Personal number:
+// =======================================================
+//Write your name and personal number. Otherwise, your exam is not graded.
+//Answers should be given in your own words!!
+
+Answer: 
+================================================
+See set 4 of course exercises/exercise 4.f
+
+Declaring a member function in a derived class as "override" forces the compiler
+to check that the function in the derived class is an override of a function in a base-class,
+i.e. there is a function in a base-class with same name and same arguments
+
+class B{
+	...
+	virtual void foo(int x){...}
+}
+
+class D: public B{
+	...
+	void foo(stad::string x); <-- without override the compiler will not give any error, 
+								  class D just provides an extra foo function
+}
+
+// The following code should work
+D d;
+d.foo("xpto");
+d.(5);
+
+class D: public B{
+	...
+	void foo(stad::string x) override; <-- compiler gives an error cause there's no function in base class with same signature
+}

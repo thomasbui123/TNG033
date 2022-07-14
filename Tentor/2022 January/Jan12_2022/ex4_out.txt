@@ -1,0 +1,17 @@
+** Table sorted by integer value **
+   -12: -0012 -012
+    -5: -0005
+     0: +0 -0 -000 00
+    10: +00010.00 +010 10
+
+** Table sorted by number of formats **
+    -5: -0005
+   -12: -0012 -012
+    10: +00010.00 +010 10
+     0: +0 -0 -000 00
+
+** Table with number of formats **
+-5: 1
+-12: 2
+10: 3
+0: 4

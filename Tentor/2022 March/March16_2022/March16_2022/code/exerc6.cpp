@@ -32,7 +32,7 @@ public:
     Document& operator=(const Document&) = delete;
 
     virtual ~Document();  // Document is a polymorphic class
-
+     
     std::string getText() const {
         return text;
     }

@@ -1,0 +1,13 @@
+
+** Test 1: Create some lists
+
+List L1: 2 4 6 8
+List L2: 3 3 5 7 7
+List L3: 1 1 1 10 6 6 8 8 10 10 10
+
+** Test 2: unique
+
+List L0: The list is empty!!
+List L1: 2 4 6 8
+List L2: 3 5 7
+List L3: 1 10 6 8 10

@@ -1,0 +1,11 @@
+/ =======================================================
+// Part III, Exerc 5: theory
+// Name:
+// LiU-id:
+// Personal number:
+// =======================================================
+//Write your name and personal number. Otherwise, your exam is not graded.
+//Answers should be given in your own words!!
+
+Answer: 
+================================================
